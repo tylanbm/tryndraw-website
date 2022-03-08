@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import React from 'react';
+import YoutubeEmbed from "./components/YoutubeEmbed";
 import './App.css';
 
 function App() {
@@ -24,6 +26,9 @@ function App() {
           View on github button
         </h1>
 
+        <div>
+          <img src={require('../src/frame.png')} alt="QR code for Expo GO link" />
+        </div>
         <h1>
           Try Now with Expo GO!
 
@@ -32,9 +37,8 @@ function App() {
 
         <h1>
           See it in action!
-
-          VIDEO
         </h1>
+        <YoutubeEmbed embedId="rokGy0huYEA" />
 
         <h1>
           Meet the creators!
