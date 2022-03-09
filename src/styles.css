@@ -12,5 +12,44 @@
     width: 100%;
     position: absolute;
   }
+
+  .header-container {
+    margin-top: 1%;
+    margin-left: 15%;
+  }
+
+  .main-container {
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+  }
+
+  .button-container {
+    text-align: center;
+    width: 30%;
+    background-color: #60B1B6;
+    border: #60B1B6;
+    border-radius: 0.5em;
+    border-width: 1;
+  }
+
+  .button-label {
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+    padding: 0;
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+
+  p {
+    font-size: larger;
+  }
+
+  h1 {
+
+  }
+
+
   
   
