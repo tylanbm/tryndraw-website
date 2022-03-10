@@ -4,6 +4,7 @@ import YoutubeEmbed from "./components/YoutubeEmbed";
 import './App.css';
 import './styles.css';
 import MainButton from './components/MainButton';
+import AuthorCard from './components/AuthorCard';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <header className='header-container'>
         <img src={require('../src/logo.png')} alt="TRYNDRAW logo" width={168} />
       </header>
+      
       <div className="main-container">
         <body>
           <h1>
@@ -28,7 +30,11 @@ function App() {
           <h1>
             View on github button
           </h1>
-          <MainButton label='View On Github' />
+          
+          <div className='button-width'>
+            <MainButton label='View On Github' link="https://github.com/tylanbm/TRYNDRAW" />
+          </div>
+          
 
           <div>
             <img src={require('../src/frame.png')} alt="QR code for Expo GO link" />
@@ -49,8 +55,18 @@ function App() {
 
             Tylan, Tyrell cards(links and photos)
           </h1>
+          
+          <div className='authors'>
+            <AuthorCard source="tylan.jpg" />
+            <AuthorCard source="tyrell.jpg" />
+          </div>
+          
         </body>
+        
       </div>
+      <footer className='footer'>
+          <p className='footer-text'>©2022 Tylan Bayley-McPherson</p>
+        </footer>
     </div>
   );
 }

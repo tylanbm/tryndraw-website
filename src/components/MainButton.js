@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const MainButton = ({ label }) => (
-  <div>
-    <button className="button-container">
+const MainButton = ({ label, link }) => (
+  
+  <div className="button-container">
+    <a href={link}>
       <p className="button-label">{label}</p>
-    </button>
+    </a>
   </div>
+  
 );
 
 MainButton.propTypes = {

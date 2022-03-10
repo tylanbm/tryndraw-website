@@ -1,16 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
+import MainButton from "./MainButton";
 
-const MainButton = ({ label }) => (
-  <div>
-    <button className="button-container">
-      <p className="button-label">{label}</p>
-    </button>
+const AuthorCard = ({ source }) => (
+  <div className="author-container">
+    <div className="spacing">
+        <img className="author-image" src={require(`../${source}`)} alt="QR code for Expo GO link" />
+    </div>
+    <MainButton label='View On Github' link='https://github.com/tylanbm' />
   </div>
+  
 );
 
-MainButton.propTypes = {
+AuthorCard.propTypes = {
   embedId: PropTypes.string.isRequired
 };
 
-export default MainButton;
+export default AuthorCard;
