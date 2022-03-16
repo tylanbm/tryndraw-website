@@ -57,8 +57,8 @@ function App() {
           </h1>
           
           <div className='authors'>
-            <AuthorCard source="tylan.jpg" />
-            <AuthorCard source="tyrell.jpg" />
+            <AuthorCard source="tylan.jpg" label='View Tylan on Github' link='https://github.com/tylanbm' />
+            <AuthorCard source="tyrell.jpg" label='View Tyrell on Github' link='https://github.com/Natty444'  />
           </div>
           
         </body>
