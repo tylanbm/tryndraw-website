@@ -15,14 +15,14 @@
 
   .header-container {
     margin-top: 1%;
-    margin-left: 15%;
+    margin-left: 20%;
   }
 
   .main-container {
     text-align: center;
     display: flex;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
   .flow {
@@ -40,8 +40,7 @@
   .authors {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-
+    justify-content: center;
   }
 
   .line  {
@@ -57,9 +56,10 @@
   .footer-text {
     font-size: 9;
   }
+  
 
   .qr-code {
-    width: 20%;
+    width: 60%;
     padding: 0px;
   }
 
@@ -117,15 +117,13 @@
   
 
   .heading-container {
-
+    
   }
-
-  
 
   .button-container {
     text-align: center;
     padding-top: 0.1rem;
-    width: 50%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 0.1rem;
@@ -133,6 +131,11 @@
     border: #60B1B6;
     border-radius: 0.5em;
     border-width: 1;
+    margin-bottom: 16px;
+  }
+
+  .half-width {
+    width: 50%;
   }
 
   .button-label {
@@ -144,16 +147,62 @@
     margin-bottom: 6%;
   }
 
+  .version-label {
+    color: #60B1B6;
+    padding: 0;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    padding-left: 16px;
+  }
+
+  .version-container {
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0.1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.1rem;
+    background-color: #ffffff;
+    border: #60B1B6 1px solid;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+
   .author-container {
     display: flex;
-    width: 50%;
+    width: 40%;
     flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    border: #60B1B6 1px solid;
+    padding: 8px;
+    padding-bottom: 48px;
+    margin: 16px;
+  }
+
+  .shadow {
+    box-shadow: 6px 8px 5px #40787b20;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .version-image {
+    width: 36px;
+  }
+
+  .author-image {
+    border: 2px solid #60b2b677;
     border-radius: 50%;
-    border-width: 5px;
+    width: 70%;
   }
 
   .button-width {
-    width: 50%;
+    width: 100%;
     margin: auto;
   }
 
@@ -162,17 +211,19 @@
     margin-top: 48px;
     margin-bottom: 48px;
   }
-
-  .container-bg {
-    background-color: #60b2b65d;
-    padding-top: 48px;
-    padding-bottom: 48px;
+  
+  .outline {
+    border-radius: 8px;
+    border: #60B1B6 1px solid;
+    padding: 8px;
   }
 
-  .author-image {
-    border: 3px solid rgba(151, 191, 180, 0.399);
-    border-radius: 50%;
-    width: 35%;
+  .card {
+    width: 50%;
+    border-radius: 8px;
+    border: #60B1B6 1px solid;
+    padding: 8px;
+    margin: auto;
   }
 
   .debug1 {
@@ -210,6 +261,7 @@
     -webkit-font-smoothing: antialiased;
   font-size: 50px;
   margin-bottom: 8px;
+  letter-spacing: -2px;
 }
 
 

@@ -6,6 +6,7 @@ import './styles.css';
 import MainButton from './components/MainButton';
 import AuthorCard from './components/AuthorCard';
 import Slideshow from './components/Slideshow';
+import Version from './components/Version';
 
 function App() {
   return (
@@ -27,11 +28,14 @@ function App() {
             </h1>
 
             <p className='text-container text'>
-              TRYNDRAW is a lite social media platform, enabling users to draw out hilarious senarios for their friends and the world to see!
+              TRYNDRAW is a lite social media platform, enabling users to draw out hilarious scenarios for their friends and the world to see!
             </p>
 
-            <div className='button-width'>
-              <MainButton label='View On Github' link="https://github.com/tylanbm/TRYNDRAW" />
+            <div className='button-width center'>
+              <div className='half-width'>
+                <MainButton label='View On Github' link="https://github.com/tylanbm/TRYNDRAW" />
+              </div>
+              
             </div>
           </div>
   
@@ -40,32 +44,40 @@ function App() {
           {/* Container for qr code */}
           <div className='container-bg'>
             <div className='main-container flow'>
-              <div>
-                <img className='qr-code' src={require('../src/frame.png')} alt="QR code for Expo GO link" />
-              </div>
-            
-              <h1>
-              Try Now with Expo GO!
-
-              QR CODE
+            <h1 className='heading left'>
+              Try now on Android with Expo GO!
               </h1>
+              <p className='text left'>
+                Scan the qr code below to get started!
+              </p>
+              
+              <div className='center'>
+              <div className='half-width'>
+                <img className='qr-code' src={require('../src/frame.png')} alt="QR code for Expo GO link" />
+                <Version label={'Scan with Expo Go on Android'} icon="android" />
+                <Version label={'Coming soon to IOS'} icon="apple" />
+              </div>
+              </div>
+              
+            
+              
             </div>
           </div>
           
           {/* Container for video demo */}
     
           <div className='main-container flow'>
-            <h1 className='left'>
+            <h1 className='left heading'>
               See it in action!
             </h1>
             <YoutubeEmbed embedId="rokGy0huYEA" />
           </div>
 
           {/* Container for creator info */}
-          <div className='container-bg spacing'>
+          <div className='spacing'>
           <div className='main-container flow'>
           
-          <h1 className='left'>
+          <h1 className='left heading'>
             Meet the team behind TRYNDRAW
           </h1>
           
@@ -78,7 +90,9 @@ function App() {
           
 
           
-          
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
         </body>
         
       </div>

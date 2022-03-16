@@ -1,7 +1,5 @@
 import React from 'react'
 
-const colors = ["#0088FE", "#00C49F", "#FFBB28"];
-
 const images = ["screen1.png", 'screen2.png', 'screen3.png','screen4.png','screen5.png','screen6.png']
 
 const delay = 4000;
@@ -35,16 +33,11 @@ function Slideshow() {
     <div className="slideshow">
       <div className="slideshow-slider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
-        {/* {colors.map((backgroundColor, index) => (
-          <div className="slide" key={index} style={{ backgroundColor }}></div>
-        ))} */}
-
         {images.map((imageName, index) => (
           <div className="slide" key={index} style={{  }}>
-            <img className='slideshow-image' src={require(`../${imageName}`)} alt="QR code for Expo GO link" />
+            <img className='slideshow-image shadow' src={require(`../${imageName}`)} alt="Depicts app and showcases features" />
           </div>
         ))}
-
       </div>
 
       <div className="slideshowDots">
