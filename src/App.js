@@ -5,39 +5,41 @@ import './App.css';
 import './styles.css';
 import MainButton from './components/MainButton';
 import AuthorCard from './components/AuthorCard';
+import Slideshow from './components/Slideshow';
 
 function App() {
   return (
-    <div>
+    <div className=''>
       <header className='header-container'>
         <img src={require('../src/logo.png')} alt="TRYNDRAW logo" width={168} />
       </header>
       
       <div className="main-container">
         <body>
-          <h1>
+            
+          {/* Slide deck that displays images to showcase app features */}
+          <Slideshow />
+
+          <h1 className='heading-container'>
             What is TRYNDRAW?
           </h1>
           
-          <p>
+
+          <p className='text-container'>
             TRYNDRAW is a lite social media platform, enabling users to draw out hilarious senarios for their friends and the world to see!
           </p>
-
-          <h1>
-            Image slideshow
-          </h1>
-
-          <h1>
-            View on github button
-          </h1>
           
+          <div className='spacing'></div>
+
           <div className='button-width'>
             <MainButton label='View On Github' link="https://github.com/tylanbm/TRYNDRAW" />
           </div>
+
+          
           
 
-          <div>
-            <img src={require('../src/frame.png')} alt="QR code for Expo GO link" />
+          <div >
+            <img className='qr-code' src={require('../src/frame.png')} alt="QR code for Expo GO link" />
           </div>
           <h1>
             Try Now with Expo GO!
@@ -51,9 +53,7 @@ function App() {
           <YoutubeEmbed embedId="rokGy0huYEA" />
 
           <h1>
-            Meet the creators!
-
-            Tylan, Tyrell cards(links and photos)
+            Meet the team behind TRYNDRAW
           </h1>
           
           <div className='authors'>
