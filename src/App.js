@@ -31,6 +31,8 @@ function App() {
               TRYNDRAW is a lite social media platform, enabling users to draw out hilarious scenarios for their friends and the world to see!
             </p>
 
+            <div className='spacing16'></div>
+
             <div className='button-width center'>
               <div className='half-width'>
                 <MainButton label='View On Github' link="https://github.com/tylanbm/TRYNDRAW" />
@@ -44,12 +46,15 @@ function App() {
           {/* Container for qr code */}
           <div className='container-bg'>
             <div className='main-container flow'>
-            <h1 className='heading left'>
+            <h1 className='heading'>
               Try now on Android with Expo GO!
               </h1>
-              <p className='text left'>
-                Scan the qr code below to get started!
+              <div className='text-container'>
+              <p className='text'>
+                If you have an android device you can scan the QR code below to get started. Not currently available on IOS devices.
               </p>
+              </div>
+              
               
               <div className='center'>
               <div className='half-width'>
@@ -63,21 +68,23 @@ function App() {
               
             </div>
           </div>
+
+          <div className='spacing'></div>
           
           {/* Container for video demo */}
-    
           <div className='main-container flow'>
-            <h1 className='left heading'>
+            <h1 className='heading'>
               See it in action!
             </h1>
             <YoutubeEmbed embedId="rokGy0huYEA" />
           </div>
 
+
           {/* Container for creator info */}
-          <div className='spacing'>
+          <div className='spacing'></div>
           <div className='main-container flow'>
           
-          <h1 className='left heading'>
+          <h1 className='heading'>
             Meet the team behind TRYNDRAW
           </h1>
           
@@ -86,9 +93,7 @@ function App() {
             <AuthorCard source="tyrell.jpg" label='View Tyrell on Github' link='https://github.com/Natty444'  />
           </div>
           </div>
-          </div>
           
-
           
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

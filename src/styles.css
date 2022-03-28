@@ -61,6 +61,7 @@
   .qr-code {
     width: 60%;
     padding: 0px;
+    margin-bottom: 16px;
   }
 
   .left {
@@ -109,21 +110,15 @@
   }
 
   .text-container {
-    width: 50%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  
-
-  .heading-container {
-    
   }
 
   .button-container {
     text-align: center;
     padding-top: 0.1rem;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 0.1rem;
@@ -160,7 +155,7 @@
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 0.1rem;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 0.1rem;
@@ -208,8 +203,14 @@
 
   .spacing {
     display: inline-block;
-    margin-top: 48px;
-    margin-bottom: 48px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .spacing16 {
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
   
   .outline {
@@ -251,8 +252,8 @@
 .text {
   font-size: 22px;
   margin-top: 0px;
-  line-height: 34px;
-  text-align: left;
+  line-height: 40px;
+  text-align: center;
 }
 
 .heading {
@@ -264,6 +265,128 @@
   letter-spacing: -2px;
 }
 
+
+@media only screen and (max-width:1024px) {
+  .main-container {
+    width: 90%;
+    margin: auto;
+}
+
+.version-container {
+  width: 80%;
+}
+
+.authors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.author-container {
+  width: 50%;
+}
+.header-container {
+  margin: 0;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.slideshow {
+  max-width: 500px;
+}
+
+.heading {
+  font-size: 38px;
+  text-align: center;
+}
+
+.text-container {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+
+
+.footer {
+  margin-top: 0px;
+}
+
+.half-width {
+  width: 80%;
+}
+
+.qr-code {
+  width: 50%;
+}
+}
+
+@media only screen and (max-width:512px) {
+  .main-container {
+      width: 100%;
+      margin: 0;
+  }
+
+  .version-container {
+    width: 80%;
+  }
+  .authors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .qr-code {
+    width: 50%;
+  }
+
+  .author-container {
+    width: auto;
+  }
+  .header-container {
+    margin: 0;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .slideshow {
+    max-width: 300px;
+  }
+
+  .heading {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .text-container {
+    width: 90%;
+  }
+
+  .text {
+    font-size: 20px;
+    margin: auto;
+    line-height: 34px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer {
+    margin-top: 0px;
+  }
+
+  .button-container {
+    margin-top: 16px;
+    width: 90%;
+  }
+
+  .half-width {
+    width: 100%;
+  }
+  
+  
+}
 
   
   
