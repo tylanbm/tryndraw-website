@@ -57,7 +57,7 @@ function App() {
                 <div className="half-width">
                   <img
                     className="qr-code"
-                    src={require("../src/frame.png")}
+                    src={require("../src/qrcode.png")}
                     alt="QR code for Expo GO link"
                   />
                   <Version
