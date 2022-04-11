@@ -48,22 +48,43 @@ function App() {
               <h1 className="heading">Try now on Android with Expo GO!</h1>
               <div className="text-container">
                 <p className="text">
-                  If you have an android device you can scan the QR code below
-                  to get started. Not currently available on IOS devices.
+                  If you have an android device you can{" "}
+                  <text
+                    style={{
+                      color: "#60B1B6",
+                      fontWeight: "bold",
+                      fontStyle: "italic",
+                    }}
+                  >
+                    scan or tap the QR code
+                  </text>{" "}
+                  below to get started. Not currently available on IOS devices.
                 </p>
               </div>
 
               <div className="center">
                 <div className="half-width">
-                  <img
-                    className="qr-code"
-                    src={require("../src/qrcode.png")}
-                    alt="QR code for Expo GO link"
-                  />
-                  <Version
-                    label={"Scan with Expo Go on Android"}
-                    icon="android"
-                  />
+                  <a
+                    href="exp://exp.host/@tylanbm/TRYNDRAW?release-channel=default"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="qr-code"
+                      src={require("../src/qrcode.png")}
+                      alt="QR code for Expo GO link"
+                    />
+                  </a>
+                  <a
+                    href="https://expo.dev/@tylanbm/TRYNDRAW"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <Version
+                      label={"Scan with Expo Go on Android or click here"}
+                      icon="android"
+                    />
+                  </a>
                   <Version label={"Coming soon to IOS"} icon="apple" />
                 </div>
               </div>
