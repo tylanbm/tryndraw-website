@@ -65,7 +65,7 @@ function App() {
               <div className="center">
                 <div className="half-width">
                   <a
-                    href="exp://exp.host/@tylanbm/TRYNDRAW?release-channel=default"
+                    href="https://expo.dev/@tylanbm/TRYNDRAW"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
